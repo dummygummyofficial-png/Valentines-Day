@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Proposal</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fecfef);
+            color: #333;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #e91e63;
+        }
+        .heart {
+            font-size: 50px;
+            color: #e91e63;
+            animation: pulse 1s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        button {
+            background: #e91e63;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background: #c2185b;
+        }
+        #proposal {
+            display: none;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heart">❤️</div>
+        <h1>Happy Valentine's Day!</h1>
+        <p>I've been wanting to tell you something special...</p>
+        <button onclick="revealProposal()">Click to Reveal</button>
+        <div id="proposal">
+            <p>Will you be my Valentine? 💕</p>
+            <p> Dipuu, I think you're amazing and I'd love to spend more time with you.</p>
+        </div>
+    </div>
+    <script>
+        function revealProposal() {
+            document.getElementById('proposal').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
